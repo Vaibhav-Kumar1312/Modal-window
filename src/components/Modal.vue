@@ -1,10 +1,10 @@
 <template>
     <div class="backdrop" @click.self="closeModal">
-        <div class="modal" >
+        <div  class="modal" >
             <!-- <span>FALLATTR {{ $attrs }}</span> -->
             <!-- <h2>{{header}}</h2>       ways to use props--> 
             <!-- <p>{{text}}</p> -->
-            <h4 v-convo = "red" >{{fullMsg}}</h4> 
+            <h4  v-convo = "red">{{fullMsg}}</h4> 
             <slot></slot>
             <div class="actions">
                 <!-- to use named slots in components -->
@@ -24,8 +24,8 @@ export default {
         localMsg:{from:'message'}
     },
     directives:{'convo' : (el,binding)=>{
-        el.style.color = 'red'
-        console.log(binding.value)
+        el.style.color = this.binding.value
+        console.log(this.binding.value)
         }},
     data(){
         return {

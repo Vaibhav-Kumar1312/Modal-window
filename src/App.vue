@@ -15,7 +15,8 @@
       </template>
       </Modal>  
   </div>
-  
+  <!-- <AsyncModal/> -->
+  <!-- <ModalAsync/> -->
   <div v-conso v-if = "showModal2">
     <Modal @close="tggleModal2" >
       <h1>test modal1</h1>
@@ -35,15 +36,30 @@ import Modal from './components/Modal.vue'
 // import defineAsyncComponent from 'vue'
 // import ModalAsync from './components/ModalAsync.vue'
 
-// const asyncModal = defineAsyncComponent(
+// const AsyncModal = defineAsyncComponent(
 //      () => {
 //        return new Promise( 
 //               (resolve,reject) => { 
-//                     setTimeout(() => resolve(ModalAsync) , 3000)
+//                     setTimeout(() => resolve(Modal) ,3000)
 //                                   }
 //                       )
 //            } 
 //        )
+
+// const asyncModal = defineAsyncComponent(
+//      () => {
+//        return new Promise( 
+//               (resolve,reject) => { 
+//                   resolve(ModalAsync)
+//                                   }
+//                       )
+//            } 
+//        )
+
+
+
+
+
 
 
 export default {
