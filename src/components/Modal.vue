@@ -4,7 +4,7 @@
             <!-- <span>FALLATTR {{ $attrs }}</span> -->
             <!-- <h2>{{header}}</h2>       ways to use props--> 
             <!-- <p>{{text}}</p> -->
-            <h4  v-convo = "red">{{fullMsg}}</h4> 
+            <h4 v-convo >{{fullMsg}}</h4> 
             <slot></slot>
             <div class="actions">
                 <!-- to use named slots in components -->
@@ -24,8 +24,8 @@ export default {
         localMsg:{from:'message'}
     },
     directives:{'convo' : (el,binding)=>{
-        el.style.color = this.binding.value
-        console.log(this.binding.value)
+        el.style.color = 'red'
+        
         }},
     data(){
         return {

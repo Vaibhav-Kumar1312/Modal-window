@@ -1,5 +1,5 @@
 <template>
-  <h1 >VUE</h1><br>
+  <h1 v-conso >VUE</h1><br>
   <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
   <!-- <input type ="text" ref ="inptElemnt">
   <button @click="handleClick">Click Me</button> -->
